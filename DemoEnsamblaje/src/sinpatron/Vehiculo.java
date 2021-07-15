@@ -9,7 +9,7 @@ package sinpatron;
  *
  * @author david_000
  */
-public class Vehiculo {
+public class Vehiculo implements Carro {
    public String color;
    public boolean direccionAsistida;
    public String marca;
@@ -28,5 +28,10 @@ public class Vehiculo {
        
        return n1;
    }
+
+    @Override
+    public void assemble() {
+         System.out.println("Vehiculo Basico");
+    }
     
 }
